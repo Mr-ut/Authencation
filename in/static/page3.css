@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mali&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+.card{
+    border: 1px solid #f1f1f1;
+    width: 369px;
+    margin-left: -10px;
+    margin-top: 40px;
+    padding: 0px 0px 10px;
+    margin-right: 72.9%;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+    font-family: 'Mali', cursive;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+}
+.next{
+    padding: 0px;
+    margin-top: 200px;
+}
+/* .top{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-family: 'Mali', cursive;
+} */
+.img{
+    margin-top: 10px;
+    border-radius: 90%;
+}
+.he{
+    /* margin-top: -5px; */
+     
+}
+/* .sec{
+    color: orange;
+} */
+/* pasting css of page 2 */
+
+.top{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 0px 0px ;
+    margin-left: 120px;
+    font-family: 'Mali', cursive;
+}
+
+.seco{
+    display: flex; 
+    justify-items: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 50px;
+   
+}
+.container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+}
+.cards{
+    border: 1px solid #f1f1f1;
+    padding: 0px 0px 10px;
+    margin-left: 120px;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    margin-top: 7px;
+}
+.like{
+    margin-left: 10px;
+   
+  
+   
+}
+.sec{
+    color: orange;
+}
+.firs{
+    margin-left: 120px;
+}
+.col{
+    margin-left: 1050px;
+    color: gray;
+}
+.logo{
+    margin-top: 10px;
+}
+
+/* new */
+.profile {
+    margin-left: 400px;
+    margin-top: 50px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    width: 300px;
+    padding-bottom: 0px;
+    margin-bottom: 520px;
+
+}
+.next{
+    margin-left: 190px;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+
+}
+
+.upload {
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    padding: 30px 20px 20px;
+    font-family: 'Open Sans', sans-serif;
+    color: grey;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+.box{
+    width: 400px;
+    height: 150px;
+    border-radius: 6px;
+    border: 1px solid rgb(240, 229, 229);
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+
+}
+.cap{
+    width:400px ;
+    height: 60px;
+    border-radius: 6px;
+    border: 1px solid rgb(240, 229, 229);
+}
+
+.color {
+    height: 100px;
+    background: rgb(224, 141, 72);
+    background: linear-gradient(90deg, rgba(224, 141, 72, 1) 4%, rgba(219, 60, 43, 1) 100%, rgba(93, 80, 76, 1) 100%);
+    padding: 30px 20px 20px;
+    color: white;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+
+}
+
+.img1 {
+    margin-left: 100px;
+}
+.img2{
+    border-radius: 50%;
+    padding: 3px 9px 3px;
+}
+
+.first {
+    display: flex;
+    justify-items: center;
+    margin-top: 40px;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    margin-left: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 25px;
+}
+.save{
+    display: flex;
+    align-items: center;
+}
+.post{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+.locate a{
+    text-decoration: none;
+    font-weight: bolder;
+}
+.whole{
+    display: flex;
+}
+.second{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 15px;
+    font-size: 15px;
+}
+.createnew{
+    display: flex;
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    border: 1px solid #f1f1f1;
+    width: 300px;
+    margin-left: 63.4%;
+    margin-top: -500px;
+    border-radius: 9px;
+}
+.createnew p{
+    margin-top: 10px;
+}

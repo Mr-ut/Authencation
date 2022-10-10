@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    <link rel="stylesheet" href="{% static 'page3.css' %}">
+    
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+           {% load static %} <img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span> </h2>
+        </div>
+    </div>
+<div class="whole">
+
+    <div class="next">
+        <div class="card">
+            <p class="he">{% load static %}<img src="{% static 'poy.jfif' %}" width="35px" class="img" alt="">&nbsp; Classic nature</p>
+            <img src="{% static 'poy.jfif' %}" width="370px" alt=""><br>&nbsp;&nbsp;<img src="{% static 'poy.jfif' %}" width="20px" alt=""><span> 197</span>
+        </div>
+        <div class="card">
+            <p class="he">{% load static %}<img src="{% static 'poy.jfif' %}" width="35px" class="img" alt="">&nbsp; Classic nature</p>
+            <img src="{% static 'poy.jfif' %}" width="370px" alt=""><br>&nbsp;&nbsp;<img src="{% static '126473.png' %}" width="20px" alt=""><span> 197</span>
+        </div>
+    </div>
+    
+    <div class="profile">
+        <div class="color">
+            <span class="first">My Profile {% load static %} <a href="{% url 'logout'%}"><img src="{% static '1997068-200.png' %}" class="img1" width="27px" alt=""></a></span>
+        </div>
+
+        <div class="second media"><img src="{{ user.profile.image.url }}" class="img2" width="50px" alt="">
+            <pre> {{user.username}} <br>Person Name</pre>
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur <br>
+            adipiscing elit. Donec vitae rhoncus s quis. <br>
+            Morbi facilisis ante sed maximus rhoncus.</p>
+        <p class="post">
+           {% load static %} <a href="{% url 'mypost'%}"><img src="{% static 'he1.jpg' %}" width="40px" class="img3" alt=""></a> My Post
+        </p>
+        <p class="save">
+           {% load static %} <img src="{% static 'save.png' %}" width="36px" class="img4" alt="">Saved Post
+        </p><br><br>
+
+    </div>
+</div>    
+<div class="createnew">
+    {% load static %} <a href="{% url 'createpost'%}"><img src="{% static 'he1.jpg' %}" width="39px" height="40px" class="img3" alt=""></a> <p>Create a new post</p>
+</div>
+</body>
+
+</html>

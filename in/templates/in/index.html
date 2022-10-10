@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    
+    <link rel="stylesheet" href="{% static 'pro1.css' %}">
+</head>
+
+<body>
+    {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+    <div class="container">
+        <div class="logo">
+            {% load static %}<img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span>  </h2>
+                <h1 class="sec">
+                    </h2>
+                    <p class="para">Alcheringa connect lets you associate <br>with the people in your life.</p>
+        </div>
+        <div>
+            
+        </div>
+        <div class="login">
+            <div class="logcolor">
+                <h2 class="log">Login</h2>
+                <p class="dont">Don't have a account? <a href="{% url 'register' %}" ><span class="regis">Register here</span></a></p>
+            </div>
+            
+                <h3 class="place">Username</h3>
+                <input type="text" class="user" ><br><br>
+                <h3 class="place" >Password</h3>
+                <input type="text" width="300px"  class="user"><br><br><br>
+                <button class="btn-light" type="sub" style="cursor:pointer ">Login</button>
+           
+        </div>
+    </div>
+</body>
+
+</html>

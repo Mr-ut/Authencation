@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+.loginn {
+    width: 340px;
+    height:160px ;
+    font-family: 'Dosis', sans-serif;
+    background: rgb(224, 141, 72);
+    background: linear-gradient(90deg, rgba(224, 141, 72, 1) 4%, rgba(219, 60, 43, 1) 100%, rgba(93, 80, 76, 1) 100%);
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    border: 1px solid #f1f1f1;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+.btnn5{
+    background: transparent;
+    margin-top: 9px;
+    border-color: orange;
+    width: 308px;
+    color: orange;
+    margin-left: 14px;
+    margin-top: 19px;
+}
+.border{
+    border: none;
+}
+.form-group{
+    border: none;
+}
+.control-label {
+    color: gray;
+    font-family: 'Dosis', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+#div_id_username{
+    margin-top: 19px;
+}
+#div_id_password{
+    margin-top: 19px;
+}
+.log1{
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    margin-left: 16px;
+    margin-top: 49px;
+}
+.textinput{
+    width: 300px;
+}
+.dont1{
+    margin-left: 17px;
+    color: white;
+}
+.alert{
+    color: red;
+    font-size: 8px;
+    margin-left: -30px;
+    padding-right: -20px;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+ul{
+    word-wrap: break-word;
+    word-break: inherit;
+}

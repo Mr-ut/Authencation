@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap');
+
+.container{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 80px 70px 80px;
+    
+}
+.fir{
+    margin-top: 40px;
+    font-family: 'Mali', cursive;
+    color: rgb(128, 126, 126);
+}
+.sec{
+    color: orange;
+}
+.para{
+    color:rgb(128, 126, 126) ;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: -40px;
+    font-family: 'Mali', cursive;
+}
+.login{
+    margin-left: 300px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 5px 4px v-offset;
+    border-radius: 20px;
+    padding: 0px 0px 50px;
+    /* box-shadow: 5px 5px 10px; */
+    box-shadow: 0 4px 8px 0 rgba(164, 164, 164, 0.19), 0 6px 20px 0 rgba(164, 164, 164, 0.19);
+    
+}
+.log{
+    margin-left: -28px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+.dont{
+    margin-left: -28px;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+}
+.logo{
+    margin-left: 200px;
+    margin-top: -78px;
+}
+.logcolor{
+    /* background-color: rgb(222, 100, 56); */
+    background: rgb(224,141,72);
+background: linear-gradient(90deg, rgba(224,141,72,1) 4%, rgba(219,60,43,1) 100%, rgba(93,80,76,1) 100%);
+    padding: 50px;
+    margin-top: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 55px;
+}
+.btn-light{
+    color: orange;
+    background-color: transparent;
+    width: 267px;
+    border:1px solid orange;
+    margin-left: 20px;
+}
+.user{
+    width: 260px;
+    margin-left: 20px;
+    
+}
+.place{
+    margin-left: 20px;
+    color: gray;
+    font-family: 'Dosis', sans-serif;
+}
+a{
+   /* margin-right: 25px; */
+    color: white;
+}
+.regis{
+margin-left: 50px;
+/* margin-right: -100px; */
+}

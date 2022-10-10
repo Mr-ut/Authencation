@@ -1,0 +1,65 @@
+{% comment %} {% extends "users/base.html" %} {% endcomment %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    <link rel="stylesheet" href="{% static 'page2.css' %}">
+    <link rel="stylesheet" href="{% static 'register.css' %}">
+    
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+           {% load static %} <img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span> </h2>
+                
+        </div>
+    
+    {% comment %} <div class="seco">
+        <div class="post">
+            <h2 class="firs">My Posts</h2>
+        </div>
+        <div class="go">
+            <h2 class="col"> {% load static %}<img src="{% static 'arrow.png' %}" width="20px" alt=""> Go Back</h2>
+        </div>
+    </div> {% endcomment %}
+    {% load crispy_forms_tags %}
+    {% block content %}
+        <div class="content-section">
+            <div class="register">
+            <h1 class="reg">Register </h1>
+            <small class="text-muted">
+                Already Have An Account? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="ml-2" href="{% url 'login' %}">Sign In</a>
+            </small>
+            </div>
+            <form method="POST">
+                {% csrf_token %}
+                <fieldset class="form-group" >
+                   
+                        {{ form|crispy }}
+                    
+                   
+                </fieldset>
+                <div class="form-group1">
+                    <button class=" btn1" type="submit" style="cursor:pointer;">Sign Up</button>
+                </div>
+            </form>
+            <div class="border-top pt-6">
+                
+            </div>
+        </div>
+    {% endblock content %}
+
+</div>
+</body>
+
+</html>

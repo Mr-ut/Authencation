@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+    <link rel="stylesheet" href="{% static 'location.css' %}">
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+           {% load static %} <img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span> </h2>
+        </div>
+    </div>
+
+    <div class="next">
+        <h2>Create new post</h2>
+    </div>
+
+    <div class="container">
+        <div class="upload">
+            <div class="locate">
+                <h3>Image</h3>
+                <input type="text" class="box" placeholder="Upload an image">
+                <h3>Caption</h3>
+                <input type="text" class="cap" placeholder="Give an image caption">
+                <h3>Current Location</h3>
+                <a href="#" id="links">Give location permissions</a>
+            </div>
+
+        </div>
+
+
+        <div class="profile">
+            <div class="color">
+                <span class="first">My Profile {% load static %} <a href="{% url 'logout'%}"><img src="{% static '1997068-200.png' %}" class="img1" width="27px" alt=""></a></span>
+            </div>
+
+            <div class="second media">{% load static %}<img src="{{ user.profile.image.url }}" class="img2" width="50px" alt="">
+                <pre>{{user.username}}  <br>Person Name</pre>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur <br>
+                adipiscing elit. Donec vitae rhoncus s quis. <br>
+                Morbi facilisis ante sed maximus rhoncus.</p>
+            <p class="post">
+                <a href="{% url 'mypost'%}"><img src="{% static 'he1.jpg' %}" width="40px" class="img3" alt=""></a> My Post
+            </p>
+            <p class="save">
+                <img src="{% static 'save.png' %}" width="36px" class="img4" alt="">Saved Post
+            </p>
+        </div>
+
+    </div>
+    </div>
+    <script src="{% static 'location.js' %}"></script>
+</body>
+
+</html>

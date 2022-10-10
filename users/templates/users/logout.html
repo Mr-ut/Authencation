@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    
+    <link rel="stylesheet" href="{% static 'pro1.css' %}">
+    <link rel="stylesheet" href="{% static 'logout.css' %}">
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="logo">
+            {% load static %}<img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span>  </h2>
+                <h1 class="sec">
+                    </h2>
+                    <p class="para">Alcheringa connect lets you associate <br>with the people in your life.</p>
+        </div>
+        <div>
+            
+        </div>
+        
+        {% block content %}
+    <h2 class="out">You have been logged out</h2>
+    <div class="border-top pt-3">
+        <small class="tx text-muted">
+           <br><br><br><br> <a class="in" href="{% url 'login' %}">Log In Again</a>
+        </small>
+    </div>
+{% endblock content %}
+    </div>
+</body>
+
+</html>

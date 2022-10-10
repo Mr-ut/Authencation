@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    
+    <link rel="stylesheet" href="{% static 'pro1.css' %}">
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+
+<body>
+    {% if messages %}
+            {% for message in messages %}
+              <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+    <div class="container">
+        <div class="logo">
+            {% load static %}<img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span>  </h2>
+                <h1 class="sec">
+                    </h2>
+                    <p class="para">Alcheringa connect lets you associate <br>with the people in your life.</p>
+        </div>
+        <div>
+            
+        </div>
+        
+        {% load crispy_forms_tags %}
+{% block content %}
+    <div class="login content-section">
+        <div class="loginn">
+        <h1 class="log1">Login</h1>
+        <small class="dont1 text-muted">
+            Don't have a account? &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a class="ye ml-2" href="{% url 'register' %}">Register here</a>
+        </small>
+    </div>
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"></legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="form-group">
+                <button class="btnn5 " type="submit">Login</button>
+            </div>
+        </form>
+        <div class="border-top pt-3">
+            
+        </div>
+    </div>
+{% endblock content %}
+    </div>
+</body>
+
+</html>

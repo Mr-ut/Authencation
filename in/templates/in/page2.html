@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa Connect</title>
+    <link rel="stylesheet" href="{% static 'page2.css' %}">
+
+</head>
+
+<body>
+    <div class="top">
+        <div class="logo">
+           {% load static %} <img src="{% static 'p1.jpg' %}" width="40px" alt="logo">
+        </div>
+        <div class="text">
+            <h1 class="fir">Alcheringa <span class="sec">Connect</span> </h2>
+        </div>
+    </div>
+    <div class="seco">
+        <div class="post">
+            <h2 class="firs">My Posts</h2>
+        </div>
+        <div class="go">
+            <h2 class="col"> {% load static %}<img src="{% static 'arrow.png' %}" width="20px" alt=""> Go Back</h2>
+        </div>
+    </div>
+
+
+    
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcheringa WebOps</title>
+    <link rel="stylesheet" href="{% static 'alcss.css' %}">
+
+</head>
+
+<body>
+    <div class="navbar">
+
+
+        <div class="brand">
+            <p class="brandname">Alcheringa WebOps</p>
+        </div>
+        <div class="searchbox"> <input type="text" class="search" width="80px" placeholder="Search something here">
+        </div>
+        <div class="brandlink"> <a class="link" href="">Home</a>
+            <a class="link" href="">About</a>
+            <a class="link" href="">Contact</a>
+        </div>
+
+    </div>
+    <hr>
+
+    <div class="text">
+
+        <h1 class="first" id="head1">Lorem ipsum Dolor &nbsp;</h1>
+        <h1 class="sec" id="head2">Lorem ipsum</h1>
+
+    </div>
+    <p class="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos quod possimus id doloremque hic
+        laboriosam <br> &emsp; &emsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; est magni. Fugit, autem temporibus?Lorem ipsum dolor sit amet.</p>
+
+    <div class="but">
+        <button type="button" class="btn-blue" id="bttn1">Button 1</button>
+        <button type="button" class="btn-light" id="bttn2">Button 2</button>
+    </div>
+
+    <div class="tablebox">
+        <div class="container">
+            <h3>HTML Formatting:</h3>
+            <p>
+                <i>This is an italic text</i><br>
+                This text is <mark>highlighted</mark><br>
+                This is a <sub>subscript</sub> and a <sup>superscript</sup><br>
+                <q>This is Quotation </q><br>
+                <del>This is done using del tag</del>
+
+            </p>
+            <h3>HTML Table</h3>
+            <table>
+                <tr>
+                    <th>Company</th>
+                    <th>Contact</th>
+                    <th>Country</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Flutterkiste</td>
+                    <td>Maria Andrasia</td>
+                    <td>Germany</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="frame">
+            <h3>HTML iframes</h3>
+            <iframe src="https://www.alcheringa.in/" width="450px" height="230px" frameborder="0"></iframe>
+        </div>
+
+        <div class="image">
+           {% load static %} <img src="{% static 'alc.jpg' %} " width="450px" alt="">
+        </div>
+    </div>
+    <footer>
+        <div class="foot">
+            <a href="www.facebook.com">Facebook</a>
+            <p>&nbsp;|&nbsp;</p>
+            <a href="www.instagram.com">Instagram</a>
+            <p>&nbsp;|&nbsp;</p>
+            <a href="www.youtube.com">Youtube</a>
+        </div>
+    </footer>
+    {% load static %}<script src="{% static 'task3.js' %}"></script>
+</body>
+
+</html>
